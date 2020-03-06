@@ -1,0 +1,11 @@
+{
+  "name": "07-portfolio-brad",
+  "version": "1.0.0",
+  "description": "Portfolion website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
