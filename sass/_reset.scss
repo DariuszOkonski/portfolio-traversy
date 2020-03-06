@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap');
+
+// General Styles
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Dosis', Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  ;
+}
+
+img {
+  width: 100%;
+}
