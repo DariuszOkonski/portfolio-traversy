@@ -59,7 +59,11 @@
   }
 
   // Header Inner
-  // &-inner {}
+  &-inner {
+    background: $bg-image no-repeat 20% 30% /cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
+  }
 }
 
 // Home Sections
@@ -68,7 +72,7 @@
   &-a,
   &-b,
   &-c {
-    color: black;
+    @extend %black-font;
   }
 
   // Home Section A
