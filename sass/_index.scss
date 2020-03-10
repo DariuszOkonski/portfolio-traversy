@@ -59,14 +59,15 @@
   }
 
   // Header Inner
-  &-inner {}
+  // &-inner {}
 }
 
 // Home Sections
 #home {
 
   &-a,
-  &-b {
+  &-b,
+  &-c {
     color: black;
   }
 
@@ -113,6 +114,54 @@
 
         &:nth-child(even) {
           background-color: darken($color: $medium-color, $amount: 10);
+        }
+      }
+    }
+  }
+
+  // Home Section C
+  &-c {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.4rem;
+      text-align: center;
+
+      &-step {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 28px;
+        background-color: $main-color;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        line-height: 15px;
+        padding: 1rem;
+        transition: all 1s;
+      }
+
+      &-icon {
+        position: relative;
+        border-radius: 50%;
+        background-color: $dark-color;
+        color: #fff;
+        padding: 2rem;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        transition: all 1s;
+
+        &:hover {
+          background-color: $main-color;
+          width: 90px;
+          height: 90px;
+          line-height: 90px;
+
+          .process-step {
+            background-color: $dark-color;
+          }
         }
       }
     }
