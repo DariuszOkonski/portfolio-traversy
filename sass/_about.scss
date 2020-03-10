@@ -1,5 +1,47 @@
-#header-inner {
-  background: $bg-image no-repeat 20% 30% /cover;
-  height: 5.5rem;
-  border-bottom: 3px solid $main-color;
+// About sections
+#about {
+  &-a {
+    @extend %black-font;
+
+    .about-info {
+      display: grid;
+      grid-template-areas:
+        'bioimage bio bio'
+        'aw1 aw2 aw3';
+      gap: 1.3rem;
+    }
+
+    //Grid Area
+    .bio-image {
+      grid-area: bioimage;
+    }
+
+    .bio {
+      grid-area: bio;
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+    }
+
+    .award {
+      &-1 {
+        grid-area: aw1;
+      }
+
+      &-2 {
+        grid-area: aw2;
+      }
+
+      &-3 {
+        grid-area: aw3;
+      }
+
+      &-1 .fas,
+      &-2 .fas,
+      &-3 .fas {
+        color: $main-color;
+        margin: 1rem;
+      }
+    }
+
+  }
 }
