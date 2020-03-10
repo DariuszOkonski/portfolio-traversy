@@ -1,7 +1,10 @@
 #contact {
+
   &-a {
     @extend %black-font;
+  }
 
+  &-a {
     .text-fields {
       display: grid;
       grid-template-areas:
@@ -41,6 +44,21 @@
     button[type="submit"] {
       color: #fff;
       width: 50%;
+    }
+  }
+
+  &-b {
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+    }
+  }
+
+  &-c {
+    h1 {
+      text-align: center;
+      font-size: 4rem;
     }
   }
 }
